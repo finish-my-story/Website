@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>finish my story - Home</title>
-	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
 	<div class="topbar">
