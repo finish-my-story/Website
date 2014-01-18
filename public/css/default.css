@@ -1,12 +1,20 @@
 @font-face { font-family: Walkway; src: url('../assets/Walkway/Walkway_SemiBold.ttf'); } 
 @font-face { font-family: Fontin Sans; src: url('../assets/FontinSans/Fontin_Sans_R_45b.otf'); } 
 
+* {
+	margin: 0;
+}
+html, body {
+	height: 100%;
+}
+
 body {
 	background-color: #005741;
 	font-family: Walkway;
-	background-image:url('../assets/background_2.png');
+	/*background-image:url('../assets/background_2.png');*/
 	background-size: 100%;
-	color: #ffffff;
+	height:100%;
+	margin-left: 40px;
 }
 
 img {
@@ -22,7 +30,7 @@ img {
 }
 
 .topbar p{
-	margin-top: 12px;
+	margin: 12px;
 }
 
 .darkOrg{
@@ -74,15 +82,30 @@ img {
 100% {opacity: 1;}
 }
 
+.columnContainer {
+	width: 100%; 
+	overflow: hidden;
+}
+
 .leftBlock {
 	width: 80%;
 	float: left;
-	background-color: #000000;
-	overflow: hidden;
-	min-height:100%;
-   position:relative;
 }
 
-.textbox {
-	width: 98%;
+.storyContent {
+	background-color: #ffffff;
+	margin: 12px;
+	font-size: 24px;
+}
+
+.textContent {
+	padding: 12px;
+}
+
+.textBox {
+	height: 40px;
+	font-size: 24px;
+	font-family: Walkway;
+	padding-left: 64px;	
+	width: 100%;
 }
