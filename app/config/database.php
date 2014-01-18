@@ -1,5 +1,16 @@
 <?php
 
+$appServices = getenv('VCAP_SERVICES');
+$appFogMySQL = false;
+
+if ($appServices) {
+	$appFog = json_decode($appServices);
+
+	if (isset($appFog['mysql-5.1'])) {
+		$appFogMySQL = $appFog['mysql-5.1'][0]['credentials'];
+	}
+}
+
 return array(
 
 	/*
@@ -54,10 +65,10 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
-			'database'  => 'database',
-			'username'  => 'root',
-			'password'  => '',
+			'host'      => ($appFogMySQL) ? $appFogMySQL['host'].':'.$appFogMySQL['port'] : 'localhost',
+			'database'  => ($appFogMySQL) ? $appFogMySQL['name'] : 'FMS',
+			'username'  => ($appFogMySQL) ? $appFogMySQL['username'] : 'root',
+			'password'  => ($appFogMySQL) ? $appFogMySQL['password'] : 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',

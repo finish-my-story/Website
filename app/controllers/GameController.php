@@ -2,7 +2,7 @@
 
 class GameController extends BaseController {
 
-	public function gameWelcome()
+	public function game($id)
 	{
 		return View::make('game');
 	}
