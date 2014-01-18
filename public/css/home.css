@@ -74,3 +74,8 @@ img {
 50%  {opacity: 0;}
 100% {opacity: 1;}
 }
+
+.separator {
+	padding: 4px;
+	background-color: #af66d5;
+}

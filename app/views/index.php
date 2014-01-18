@@ -16,8 +16,8 @@
 	</div>
 	<div class="ops">
 		<a href="#">Play</a>
-		<span style="padding: 12px; background-color:">|</span>
-		<a href="#">Read</a>
+		<span class="separator"></span>
+		<a href="#">&nbsp;Read</a>
 	</div>
 	<div class="desc">
 		<br/><br/><br/>
