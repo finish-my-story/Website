@@ -66,9 +66,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => ($appFogMySQL) ? $appFogMySQL['host'].':'.$appFogMySQL['port'] : 'localhost',
-			'database'  => ($appFogMySQL) ? $appFogMySQL['name'] : 'database'
+			'database'  => ($appFogMySQL) ? $appFogMySQL['name'] : 'FMS',
 			'username'  => ($appFogMySQL) ? $appFogMySQL['username'] : 'root',
-			'password'  => ($appFogMySQL) ? $appFogMySQL['password'] : ''
+			'password'  => ($appFogMySQL) ? $appFogMySQL['password'] : 'root',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
