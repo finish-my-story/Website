@@ -11,4 +11,5 @@
 |
 */
 
-Route::get('/', 'GameController@gameWelcome');
+Route::get('/', 'HomeController@showWelcome');
+Route::get('game/{id}', 'GameController@game');
