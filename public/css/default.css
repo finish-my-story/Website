@@ -126,7 +126,7 @@ ul {
 	width: 100%;
 }
 
-.progressbar {
+.prog_outerdiv {
 	background-color: #ffffff;
 	margin: 12px;
 	margin-top: 24px;
@@ -134,7 +134,7 @@ ul {
 	border-radius:12px;
 }
 
-.progressbar > div {
+.prog_innerdiv {
 	background-color: orange;
 	border:1px solid;
 	border-radius:12px;
