@@ -79,6 +79,8 @@ img {
 	float: left;
 	background-color: #000000;
 	overflow: hidden;
+	min-height:100%;
+   position:relative;
 }
 
 .textbox {

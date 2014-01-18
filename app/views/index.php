@@ -16,7 +16,7 @@
 	</div>
 	<div class="ops">
 		<a href="#">Play</a>
-		<span>|</span>
+		<span style="padding: 12px; background-color:">|</span>
 		<a href="#">Read</a>
 	</div>
 	<div class="desc">

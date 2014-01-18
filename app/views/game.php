@@ -16,7 +16,7 @@
 
 	<div style="width: 100%; overflow: hidden;">
 	    <div class="leftBlock">
-	    	<div height="100%">
+	    	<div class="storyContent" height="100%">
 	    		Left
 	    	</div>
 	    	<div class="textbox">
