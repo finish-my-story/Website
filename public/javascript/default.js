@@ -1,5 +1,6 @@
  $(document).ready(function() {
- 	var newheight = $(window).outerHeight() - $(".topbar p").outerHeight(true) - $(".textContent").outerHeight(true) - $(".storyContent").outerHeight(true);
+ 	var storyPadding = 60;
+ 	var newheight = $(window).outerHeight() - $(".topbar p").outerHeight(true) - $(".textContent").outerHeight(true) - storyPadding;
     $(".storyContent").height(newheight);
     console.log($(window).outerHeight());
 });	
