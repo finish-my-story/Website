@@ -1,14 +1,32 @@
 @font-face { font-family: Walkway; src: url('../assets/Walkway/Walkway_SemiBold.ttf'); } 
+@font-face { font-family: Fontin Sans; src: url('../assets/FontinSans/Fontin_Sans_R_45b.otf'); } 
 
 body {
 	background-color: #005741;
 	font-family: Walkway;
+	background-image:url('../assets/background.jpg');
+	background-size: 100%;
 }
 
 img {
 	display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.topbar {
+	font-size: 88px;
+	text-align: center;
+	font-family: Fontin Sans;
+	color: #ffa773;
+}
+
+.topbar p{
+	margin-top: 36px;
+}
+
+.darkOrg{
+	color: #ff5f00;
 }
 
 .ops {
@@ -25,5 +43,33 @@ img {
 .ops a:hover {
 	transition: color 0.5s;
 	-webkit-transition: color 0.5s; /* Safari */
-	color: #ff5f00;
+	color: #ff8740;
+}
+
+.desc {
+	text-align: center;
+	color: #EAC2FF;
+	font-size: 32px;
+}
+
+.blink{
+	animation-name: blinking;
+	-webkit-animation-name: blinking;
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count:infinite; /*Safari and Chrome*/
+}
+
+@-webkit-keyframes 'blinking' {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@keyframes blinking
+{
+0%   {opacity: 1;}
+50%  {opacity: 0;}
+100% {opacity: 1;}
 }
