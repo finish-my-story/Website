@@ -2,9 +2,9 @@
 
 class GameController extends BaseController {
 
-	public function showWelcome()
+	public function gameWelcome()
 	{
-		return View::make('hello');
+		return View::make('game');
 	}
 
 }
